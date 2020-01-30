@@ -2,12 +2,12 @@ import React from 'react';
 import "./styles.scss";
 import content from "./content";
 
-const Home = (props) => {
+const Nav = (props) => {
     return (
-        <div className="homeContainer">
+        <div className="navContainer">
             <h1>{content.TITLE}</h1>
         </div>
     );
 };
 
-export default Home;
+export default Nav;
