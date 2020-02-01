@@ -1,9 +1,29 @@
 @import "../../scss/common.styles.scss";
 
 .navContainer {
+    display: flex;
     position: fixed;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 80px;
+    left: 0;
+    top: 0;
     padding: 0 20px;
     color: $main-1;
     background: $main-2;
+    box-shadow: $shadow;
+    z-index: 1000;
+    .navLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        height: 100%;
+        font-size: $font-size-xl;
+        font-weight: 600;
+    }
+    .navLinks.active {
+        color: $main-3;
+    }
 }

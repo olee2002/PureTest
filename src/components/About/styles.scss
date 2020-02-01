@@ -1,1 +1,9 @@
 @import "../../scss/common.styles.scss";
+
+.aboutContainer {
+    @extend .bodyContainer;
+    color: $main-2;
+    .aboutContentContainer {
+        padding: 0 30px 30px 30px;
+    }
+}

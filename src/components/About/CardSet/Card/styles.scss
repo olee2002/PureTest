@@ -1,0 +1,37 @@
+@import "../../../../scss/common.styles.scss";
+
+.profileCardContainer {
+    width: fit-content;
+    margin: 30px;
+    padding: 20px 100px;
+    color: $main-1;
+    background: $main-2;
+    border-radius: 10px;
+    line-height: 1.5;
+    list-style: none;
+    text-align: center;
+    .profileIcon {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+        border-radius: 50%;
+    }
+    .fullNameLabel {
+        color: $main-1;
+        font-size: $font-size-xxl;
+    }
+    label {
+        color: $main-3;
+    }
+}
+
+.hoverable {
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s;
+}
+.hoverable:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
