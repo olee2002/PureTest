@@ -4,15 +4,16 @@ import content from "./content";
 import NavContainer from "../../containers/NavContainer";
 import CardSet from "./CardSet";
 
-const About = (props) => {
+const About = ({ data }) => {
     return (
         <div className="aboutContainer">
             <NavContainer />
-            <CardSet />
-            <section className="aboutContentContainer">
+            <section className="cardSetContainer">
+                <CardSet data={data} />
+            </section>
+            <section className="contentContainer">
 
-                <p><strong>{content.KFLLC_LABEL}</strong>&nbsp;{content.PART_ONE}&nbsp;
-                <strong>{content.CHOON_LABEL}</strong>&nbsp;{content.PART_TWO}</p>
+                <p><strong>{content.KFLLC_LABEL}</strong>&nbsp;{content.PART_ONE}&nbsp;{content.PART_TWO}</p>
                 
                 <p>{content.PART_THREE}&nbsp;<strong>{content.PROPERTIES_LABEL}</strong>&nbsp;{content.PART_FOUR}</p>
 

@@ -1,11 +1,13 @@
 @import "../../../../scss/common.styles.scss";
 
 .profileCardContainer {
-    width: fit-content;
-    margin: 30px;
-    padding: 20px 100px;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;
     color: $main-1;
     background: $main-2;
+    font-size: $font-size-normal + 2;
     border-radius: 10px;
     line-height: 1.5;
     list-style: none;
@@ -13,7 +15,7 @@
     .profileIcon {
         width: 150px;
         height: 150px;
-        margin: 20px auto;
+        margin: 10px auto;
         border-radius: 50%;
     }
     .fullNameLabel {
@@ -22,6 +24,9 @@
     }
     label {
         color: $main-3;
+    }
+    ul {
+        list-style: none;
     }
 }
 

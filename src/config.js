@@ -3,7 +3,6 @@ const api = "http://localhost:3000";
 export const genericHeaders = () => ({
     "Content-Type": "application/json",
     "Accept": "application/json"
-    
 });
 
 export const authHeaders = () => ({

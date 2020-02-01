@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from "react-redux";
 import About from "../../components/About";
+import { getAdminData } from "../../state/actions/getActions";
+import { dataSelector } from "../../state/selectors/dataSelector";
 
-const AboutContainer = (props) => {return (<About />);};
+const AboutContainer = ({ data = [], getAdminDataDispatchAction }) => {
 
-export default AboutContainer;
+    useEffect(() => {
+        getAdminDataDispatchAction();
+    }, [getAdminDataDispatchAction]);
+
+    return (<About data={data} />);
+};
+
+const dispatchActions = (dispatch) => ({
+    getAdminDataDispatchAction: () => dispatch(getAdminData())
+});
+
+export default connect (
+    dataSelector,
+    dispatchActions
+)(AboutContainer);
