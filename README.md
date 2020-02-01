@@ -3,7 +3,9 @@
 
 ## So far...
 
-![](./src/assets/img/readme/readme.png)
+![](./src/assets/img/readme/readme1.png)
+![](./src/assets/img/readme/readme2.png)
+![](./src/assets/img/readme/readme3.png)
 
 ## Description
 
