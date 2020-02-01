@@ -3,7 +3,7 @@
 
 ## So far...
 
-![](./public/images/readme/readme.png)
+![](./src/assets/img/readme/readme.png)
 
 ## Description
 
