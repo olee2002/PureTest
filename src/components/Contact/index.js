@@ -97,13 +97,13 @@ const Contact = ({
                 <div className="textAreaContainer">
                     <TextArea 
                         id="inquiry"
-                        className={((clickCount > 0) && (inquiry.length < 4)) ? "errorArea" : "textArea"}
+                        className={((clickCount > 0) && (inquiry.length < 5)) ? "errorArea" : "textArea"}
                         onChange={onInputChange}
                         value={inquiry}
                         placeholder={content.TEXTAREA_PLACEHOLDER}
                         style={
-                            ((clickCount > 0) && (inquiry.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
-                            ((clickCount > 0) && (inquiry.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
+                            ((clickCount > 0) && (inquiry.length < 5)) ? { borderTop: "2px solid #ff0000" } : 
+                            ((clickCount > 0) && (inquiry.length > 4)) ? { borderTop: "2px solid #0080005b" } : {}
                         }
                     />
                 </div>

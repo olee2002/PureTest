@@ -3,7 +3,13 @@
 
 ## So far...
 
+General 2/1/20:
+
 ![](./src/assets/img/readme/readme.gif)
+
+Contact form including working validiation:
+
+![](./src/assets/img/readme/readme2.gif)
 
 ## Description
 
