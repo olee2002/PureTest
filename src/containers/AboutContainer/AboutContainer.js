@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from "react-redux";
 import About from "../../components/About";
 import { getAdminData } from "../../state/actions/getActions";
-import { dataSelector } from "../../state/selectors/dataSelector";
+import { dataSelector } from "../../state/selectors/gets";
 
 const AboutContainer = ({ data = [], getAdminDataDispatchAction }) => {
 

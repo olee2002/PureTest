@@ -2,5 +2,48 @@
 
 .homeContainer {
     @extend .bodyContainer;
-    width: 100%;
+    background: $main-4;
+    .headerContainer {
+        .headerLabels {
+            color: $harvard-red;
+            text-align: center;
+            animation: fade 5s infinite ease;
+        }
+        .photoGallery {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            height: 500px;
+            margin: auto;
+            background: $main-1;
+            border: 1px solid $harvard-red;
+            border-radius: 15px;
+            .arrowLeftIcon {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                left: 10px;
+                top: calc(50% - 22.5px);
+                border-radius: 50%;
+                z-index: 1000;
+            }
+            .arrowRightIcon {
+                @extend .arrowLeftIcon;
+                left: initial;
+                right: 10px;
+            }
+        }
+        @keyframes fade {
+            0%, 100% { opacity: 0; };
+            50% { opacity: 1; }
+        }
+    }
+    .bodyContainer {
+        text-align: center;
+    }
+    .footerNavContainer {
+        margin-top: 50px;
+    }
 }

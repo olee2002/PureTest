@@ -1,9 +1,6 @@
 import React from "react";
-import { Input } from "antd";
 
-const { TextArea } = Input;
-
-const TextAreaField = ({
+const TextArea = ({
   id,
   className,
   placeholder,
@@ -24,7 +21,7 @@ const TextAreaField = ({
     };
   }
   return (
-    <TextArea 
+    <textarea 
       rows="8"
       id={id}
       className={className}
@@ -38,4 +35,4 @@ const TextAreaField = ({
   );
 };
 
-export default TextAreaField;
+export default TextArea;

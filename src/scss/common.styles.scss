@@ -3,3 +3,90 @@
 .bodyContainer {
     padding-top: 80px;
 }
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    background: $main-1;
+    margin: 10px auto 18px auto;
+    padding: 20px;
+    box-shadow: #00000029 0px 1px 6px;
+    text-align: left;
+}
+
+.inputContainer {
+    .inputField {
+        max-width: 276px;
+        width: 85%;
+        height: 45px;
+        margin-bottom: 10px;
+        font-size: $font-size-normal;
+        border-top: 2px solid $main-4;
+    }
+    .inputField:focus {
+        border-top: 2px solid #c9001761;
+    }
+}
+.textAreaContainer {
+    .textArea {
+        width: 100%;
+        height: 250px;
+        padding: 20px 0;
+        font-size: $font-size-normal;
+        border-top: 2px solid $main-4;
+    }
+    .textArea:focus {
+        border-top: 2px solid #c9001761;
+    }
+}
+
+input,
+textarea {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    resize: none;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: $font-size-normal;
+    color: $main-2;
+    font-weight: 500;
+    opacity: 30%;
+}
+
+.submitButton {
+    width: 20em;
+    height: 3em;
+    margin-top: 10px;
+    background: $harvard-red;
+    color: $main-1;
+    font-size: $font-size-normal;
+    border: none;
+    letter-spacing: 1.4px;
+    :disabled {
+        background-color: $main-2;
+    }
+}
+.submitButton:hover {
+    cursor: pointer;
+}
+
+.hoverable {
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s;
+}
+.hoverable:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

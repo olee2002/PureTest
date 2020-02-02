@@ -13,5 +13,9 @@ export const authHeaders = () => ({
 export const formDataHeader = (hasToken = true) => ({
     "Content-Type": "multipart/form-data",
     ...hasToken && { "x-access-token": localStorage.getItem('x-access-token') }
-})
+});
+
+export const emailjsTemplateID = `template_aPyow3xB`;
+export const emailjsUserID = `user_8JfVAbiiER6TTfD8Ol7Ge`;
+
 export default api;

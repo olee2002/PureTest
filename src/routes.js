@@ -3,6 +3,7 @@ import { Switch, Router, Route } from "react-router-dom";
 import history from "./history";
 import HomeContainer from "./containers/HomeContainer";
 import AboutContainer from "./containers/AboutContainer";
+import ContactContainer from "./containers/ContactContainer";
 
 export default (props) => {
     return (
@@ -10,6 +11,7 @@ export default (props) => {
             <Switch>
                 <Route path="/" component={HomeContainer} exact />
                 <Route path="/about" component={AboutContainer} exact />
+                <Route path="/contact" component={ContactContainer} exact />
             </Switch>
         </Router>
     );

@@ -1,5 +1,4 @@
 import React from "react";
-import { Input } from "antd";
 
 const InputField = ({
   id,
@@ -24,7 +23,7 @@ const InputField = ({
           ...componentStyle,
           background: `url('../../img/${iconName}.png') no-repeat`,
           backgroundSize: "17px 17px",
-          backgroundPosition: "100% 15%",
+          backgroundPosition: "100% 50%",
           paddingRight: "30px"
         }
         break;
@@ -41,7 +40,7 @@ const InputField = ({
     }
   }
   return (
-    <Input
+    <input
       id={id}
       accept={accept}
       ref={passableRef}

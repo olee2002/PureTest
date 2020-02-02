@@ -2,8 +2,8 @@
 
 .aboutContainer {
     @extend .bodyContainer;
-    color: $main-2;
     background: $main-4;
+    color: $harvard-red;
     .cardSetContainer {
         display: flex;
         flex-flow: row wrap;
@@ -13,5 +13,63 @@
     .contentContainer {
         padding: 0 30px 30px 30px;
         font-size: $font-size-xl;
+    }
+    .legacyContainer {
+        padding: 30px;
+        background: $main-1;
+        .patTillmanContainer {
+            display: flex;
+            align-items: center;
+            .patTillmanIcon {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .patTillmanContent {
+                margin-left: 40px;
+                list-style: none;
+            }
+        }
+        .closingContainer {
+            display: flex;
+            align-items: center;
+            .quoteContainer {
+                padding-right: 20px;
+                font-size: $font-size-l;
+            }
+            .lovedOnesContainer {
+                display: flex;
+                justify-content: flex-end;
+                .doggysContainer {
+                    padding: 20px 20px 0 20px;
+                    text-align: center;
+                    .doggysIcon {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                    }
+                }
+                .tkContainer {
+                    @extend .doggysContainer;
+                    list-style: none;
+                    .tkNameLabel {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100px;
+                        height: 100px;
+                        margin: 0;
+                        margin-bottom: 15px;
+                        background: $emory-yellow;
+                        color: $emory-blue;
+                        border: 2px solid $emory-blue;
+                        border-radius: 50%;
+                    }
+                    li {
+                        font-size: $font-size-small;
+                    }
+                }
+            }
+        }
     }
 }

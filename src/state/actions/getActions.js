@@ -1,4 +1,3 @@
-import history from "../../history";
 import api, { genericHeaders, authHeaders } from "../../config";
 
 export const GET_ADMIN_DATA_SUCCESS = "GET_ADMIN_DATA_SUCCESS";

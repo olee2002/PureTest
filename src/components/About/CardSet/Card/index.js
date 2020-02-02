@@ -3,7 +3,7 @@ import "./styles.scss";
 import content from "./content";
 import Icon from "../../../../common/Icon";
 
-const Card = ({ data }) => {
+const Card = ({ data, i }) => {
 
     const {
         first_name,
@@ -28,7 +28,7 @@ const Card = ({ data }) => {
 
     return (
         (first_name !== "Eun" && (
-            <ul className="profileCardContainer hoverable">
+            <ul className="profileCardContainer" key={i}>
                 <li className="fullNameLabel">{first_name}&nbsp;{middle_name ? middle_name[0] + ". ": ""}{last_name}</li>
                 <div className="position">{title}</div>
                 <div className="iconContainer"><Icon className="profileIcon" iconName={first_name} /></div>

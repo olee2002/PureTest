@@ -1,0 +1,1 @@
+export const updateSelector = state => state.update;

@@ -1,0 +1,64 @@
+@import "../../scss/common.styles.scss";
+
+.contactContainer {
+    @extend .bodyContainer;
+    height: 100vh;
+    background: $main-4;
+    color: $harvard-red;
+    .contactFormHeader {
+        max-width: 70%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .formContainer {
+        max-width: 70%;
+        margin: 0 auto 40px auto;
+        .headerInputRow {
+            display: flex;
+            justify-content: space-between;
+            .inputContainer {
+                position: relative;
+                width: 23%;
+                .inputField {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 0;
+                }
+                #inquiry_type:hover {
+                    cursor: pointer;
+                }
+                .selectList {
+                    position: absolute;
+                    width: 230px;
+                    right: 0;
+                    top: 45px;
+                    background: $main-4;
+                    color: $main-1;
+                    box-shadow: $shadow;
+                    list-style: none;
+                    z-index: 1000;
+                    transition: color .5s;
+                    li {
+                        padding: 10px;
+                    }
+                    li:hover {
+                        cursor: pointer;
+                        color: $harvard-red;
+                        transition: color .5s;
+                    }
+                }
+            }
+        }
+        .textAreaContainer {
+            .textArea {
+                height: 300px;
+            }
+        }
+    }
+    .footerNavContainer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+}
