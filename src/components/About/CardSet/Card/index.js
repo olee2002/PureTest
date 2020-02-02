@@ -11,8 +11,6 @@ const Card = ({ data, i }) => {
         last_name,
         title,
         date_of_birth,
-        city_location,
-        state_location,
         occupation,
         education_1,
         education_2,
@@ -27,7 +25,7 @@ const Card = ({ data, i }) => {
     const educationArray = [education_1, education_2, education_3].map(education => <li className="education">{education}</li>)
 
     return (
-        (first_name !== "Eun" && (
+        (first_name !== "Tiffany" && first_name !== "Eric" && (
             <ul className="profileCardContainer" key={i}>
                 <li className="fullNameLabel">{first_name}&nbsp;{middle_name ? middle_name[0] + ". ": ""}{last_name}</li>
                 <div className="position">{title}</div>
@@ -35,10 +33,6 @@ const Card = ({ data, i }) => {
                 <li className="dateOfBirthContainer">
                     <label className="dateOfBirthLabel">{content.DATE_OF_BIRTH}&nbsp;</label>
                     <div className="dateOfBirth">{formattedDate}</div>
-                </li>
-                <li className="residesContainer">
-                    <label className="residesLabel">{content.CURRENTLY_RESIDES}&nbsp;</label>
-                    <div className="resides">{city_location}, {state_location}</div>
                 </li>
                 <li className="occupationContainer">
                     <label className="occupationLabel">{content.OCCUPATION}&nbsp;</label>

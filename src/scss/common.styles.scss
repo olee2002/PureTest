@@ -24,7 +24,7 @@
         border-top: 2px solid $main-4;
     }
     .inputField:focus {
-        border-top: 2px solid #c9001761;
+        border-top: 2px solid $harvard-red-low-opacity;
     }
 }
 .textAreaContainer {
@@ -36,7 +36,7 @@
         border-top: 2px solid $main-4;
     }
     .textArea:focus {
-        border-top: 2px solid #c9001761;
+        border-top: 2px solid $harvard-red-low-opacity;
     }
 }
 
@@ -70,13 +70,15 @@ textarea::placeholder {
     color: $main-1;
     font-size: $font-size-normal;
     border: none;
+    outline: none;
     letter-spacing: 1.4px;
-    :disabled {
-        background-color: $main-2;
-    }
 }
 .submitButton:hover {
     cursor: pointer;
+}
+.submitButton:disabled {
+    opacity: 0.55; 
+    cursor: not-allowed;
 }
 
 .hoverable {

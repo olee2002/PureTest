@@ -18,8 +18,8 @@ const Home = (props) => {
             <section className="headerContainer">
                 <h1 className="headerLabels">{content.HEADER_ARRAY[interval]}</h1>
                 <div className="photoGallery">
-                    <Icon className="arrowLeftIcon hoverable" iconName="arrow_left" />
-                    <Icon className="arrowRightIcon hoverable" iconName="arrow_right" />
+                    <Icon className="arrowLeftIcon" iconName="arrow_left" />
+                    <Icon className="arrowRightIcon" iconName="arrow_right" />
                     Images go here
                 </div>
             </section>

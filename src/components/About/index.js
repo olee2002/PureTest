@@ -39,7 +39,7 @@ const About = ({ data }) => {
                 <div className="closingContainer">
                     <div className="quoteContainer">
                         <p>"{content.EMERSON_QUOTE}"</p>
-                        <p> - {content.EMERSON_NAME_LABEL}</p>
+                        <p>&nbsp;- {content.EMERSON_NAME_LABEL}</p>
                     </div>
                     <div className="lovedOnesContainer">
                         <ul className="doggysContainer">

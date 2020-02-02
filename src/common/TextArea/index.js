@@ -9,11 +9,13 @@ const TextArea = ({
   iconName,
   type,
   value,
-  disabled
+  disabled,
+  style
 }) => {
-  let style;
+  let componentStyle = style;
   if (hasIcon) {
-    style = {
+    componentStyle = {
+      ...componentStyle,
       background: `url('../../img/${iconName}.png') no-repeat`,
       backgroundSize: "17px 17px",
       backgroundPosition: "8px 16px",
@@ -25,7 +27,7 @@ const TextArea = ({
       rows="8"
       id={id}
       className={className}
-      style={style}
+      style={componentStyle}
       onChange={onChange}
       placeholder={placeholder}
       type={type}

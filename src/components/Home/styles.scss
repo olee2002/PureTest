@@ -9,6 +9,10 @@
             text-align: center;
             animation: fade 5s infinite ease;
         }
+        @keyframes fade {
+            0%, 100% { opacity: 0; };
+            50% { opacity: 1; }
+        }
         .photoGallery {
             position: relative;
             display: flex;
@@ -27,17 +31,17 @@
                 left: 10px;
                 top: calc(50% - 22.5px);
                 border-radius: 50%;
+                box-shadow: $shadow;
                 z-index: 1000;
+            }
+            .arrowLeftIcon:hover {
+                cursor: pointer;
             }
             .arrowRightIcon {
                 @extend .arrowLeftIcon;
                 left: initial;
                 right: 10px;
             }
-        }
-        @keyframes fade {
-            0%, 100% { opacity: 0; };
-            50% { opacity: 1; }
         }
     }
     .bodyContainer {

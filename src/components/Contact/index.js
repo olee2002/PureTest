@@ -8,16 +8,27 @@ import Button from "../../common/Button";
 import FooterNav from "../FooterNav";
 
 const Contact = ({ 
-    first_name,
-    last_name,
-    email,
-    inquiry_type,
-    inquiry,
+    formData,
+    clickCount,
     selectIsOpen,
     handleSelectClick,
     handleButtonClick,
     onInputChange
 }) => {
+    const {
+        first_name,
+        last_name,
+        email,
+        inquiry_type,
+        inquiry
+    } = formData;
+
+    let formIsValid = first_name.length < 1 ? 
+        false : last_name.length < 1 ? 
+        false : email.length < 1 ?
+        false : inquiry.length < 5 ? 
+        false : true;
+
     return (
         <div className="contactContainer">
             <NavContainer />
@@ -27,28 +38,40 @@ const Contact = ({
                     <div className="inputContainer">
                         <InputField 
                             id="first_name"
-                            className="inputField"
+                            className={((clickCount > 0) && (first_name.length === 0)) ? "errorField" : "inputField"}
                             onChange={onInputChange}
                             value={first_name}
                             placeholder={content.FIRST_NAME}
+                            style={
+                                ((clickCount > 0) && (first_name.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
+                                ((clickCount > 0) && (first_name.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
+                            }
                         />
                     </div>
                     <div className="inputContainer">
                         <InputField 
                             id="last_name"
-                            className="inputField"
+                            className={((clickCount > 0) && (last_name.length === 0)) ? "errorField" : "inputField"}
                             onChange={onInputChange}
                             value={last_name}
                             placeholder={content.LAST_NAME}
+                            style={
+                                ((clickCount > 0) && (last_name.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
+                                ((clickCount > 0) && (last_name.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
+                            }
                         />
                     </div>
                     <div className="inputContainer">
                         <InputField 
                             id="email"
-                            className="inputField"
+                            className={((clickCount > 0) && (email.length === 0)) ? "errorField" : "inputField"}
                             onChange={onInputChange}
                             value={email}
                             placeholder={content.EMAIL}
+                            style={
+                                ((clickCount > 0) && (email.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
+                                ((clickCount > 0) && (email.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
+                            }
                         />
                     </div>
                     <div onClick={() => handleSelectClick(!selectIsOpen)} className="inputContainer">
@@ -62,6 +85,7 @@ const Contact = ({
                             iconPosition="right"
                             iconName="add_circle"
                             disabled={true}
+                            style={clickCount > 0 && { borderTop: "2px solid #0080005b" }}
                         />
                         {selectIsOpen && (
                             <ul className="selectList">
@@ -73,10 +97,14 @@ const Contact = ({
                 <div className="textAreaContainer">
                     <TextArea 
                         id="inquiry"
-                        className="textArea"
+                        className={((clickCount > 0) && (inquiry.length < 4)) ? "errorArea" : "textArea"}
                         onChange={onInputChange}
                         value={inquiry}
                         placeholder={content.TEXTAREA_PLACEHOLDER}
+                        style={
+                            ((clickCount > 0) && (inquiry.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
+                            ((clickCount > 0) && (inquiry.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
+                        }
                     />
                 </div>
                 <div className="buttonContainer">
@@ -84,7 +112,7 @@ const Contact = ({
                         onClick={(e) => handleButtonClick(e)}
                         className="submitButton"
                         buttonText={content.BUTTON_NAME_TYPES[1]}
-                        disabled={false}
+                        disabled={((clickCount > 0) && !formIsValid) ? true : false}
                     />
                 </div>
             </form>

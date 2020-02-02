@@ -7,10 +7,10 @@ export default {
     EMAIL: `Email`,
     INQUIRY_TYPE: `Inquiry Type`,
     INQUIRY_TYPES: [
-        `Property Purchase/Sale Information Request`,
-        `Investment/Financial Advice Request`,
-        `Real-Estate Market Findings/Area Updates`,
-        `Non-Profit/Volunteer Opportunity Information`
+        `Property Purchase or Sale Information Request`,
+        `Investment or Financial Advice Request`,
+        `Real-Estate Market Findings or Area Updates`,
+        `Non-Profit Partnership or Volunteer Opportunities`
     ],
     TEXTAREA_PLACEHOLDER: `Please enter your message here.`,
     BUTTON_NAME_TYPES: [`Submit`, `Send`]
