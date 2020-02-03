@@ -26,7 +26,7 @@ const Contact = ({
     let formIsValid = first_name.length < 1 ? 
         false : last_name.length < 1 ? 
         false : email.length < 1 ?
-        false : inquiry.length < 5 ? 
+        false : inquiry.length < 1 ? 
         false : true;
 
     return (
@@ -96,7 +96,7 @@ const Contact = ({
                                 iconName="add_circle_main_4"
                                 disabled={true}
                                 style={
-                                    selectIsOpen ? { color: "#c90016", borderTop: "2px solid #c90016" } :
+                                    selectIsOpen ? { borderTop: "2px solid #c900178a" } :
                                     clickCount > 0 ? { borderTop: "2px solid #0080005b" } : {}
                                 }
                             />
@@ -114,7 +114,7 @@ const Contact = ({
                                     iconName="add_circle_harvard_red"
                                     disabled={true}
                                     style={
-                                        selectIsOpen ? { color: "#c90016", borderTop: "2px solid #c90016" } :
+                                        selectIsOpen ? { borderTop: "2px solid #c900178a" } :
                                         clickCount > 0 ? { borderTop: "2px solid #0080005b" } : {}
                                     }
                                 />
@@ -128,13 +128,13 @@ const Contact = ({
                 <div className="textAreaContainer">
                     <TextArea 
                         id="inquiry"
-                        className={((clickCount > 0) && (inquiry.length < 5)) ? "errorArea" : "textArea"}
+                        className={((clickCount > 0) && (inquiry.length < 1)) ? "errorArea" : "textArea"}
                         onChange={onInputChange}
                         value={inquiry}
                         placeholder={content.TEXTAREA_PLACEHOLDER}
                         style={
-                            ((clickCount > 0) && (inquiry.length < 5)) ? { borderTop: "2px solid #ff0000" } : 
-                            ((clickCount > 0) && (inquiry.length > 4)) ? { borderTop: "2px solid #0080005b" } : {}
+                            ((clickCount > 0) && (inquiry.length < 1)) ? { borderTop: "2px solid #ff0000" } : 
+                            ((clickCount > 0) && (inquiry.length > 0)) ? { borderTop: "2px solid #0080005b" } : {}
                         }
                     />
                 </div>

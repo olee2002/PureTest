@@ -22,7 +22,7 @@ const InputField = ({
       componentStyle = {
           ...componentStyle,
           background: `url('../../img/${iconName}.png') no-repeat`,
-          backgroundSize: "17px 17px",
+          backgroundSize: "27px 27px",
           backgroundPosition: "100% 50%",
           paddingRight: "30px"
         }
@@ -31,7 +31,7 @@ const InputField = ({
         componentStyle = {
           ...componentStyle,
           background: `url('../../img/${iconName}.png') no-repeat`,
-          backgroundSize: "17px 17px",
+          backgroundSize: "27px 27px",
           backgroundPosition: "8px 16px",
           paddingLeft: "30px"
         }

@@ -26,7 +26,7 @@ export default {
     PAT_TILLMAN_DESCRIPTION_LABEL: `Scholar, Athlete, Adventurer, Philosopher, Hero, Guardian, and true Role-model`,
     EMERSON_QUOTE: `What I must do is all that concerns me, not what the people think... you will always find those who think they know what is your duty
     better than you yourself know it. It is easy in the world to live after the world's opinion; it is easy in solitude to live 
-    after our own; but the great man is he who in the midst of the crowd keeps in perfect sweetness the independence of solitude.`,
+    after our own; but the great man is he who in the midst of the crowd keeps with perfect sweetness the independence of solitude.`,
     EMERSON_NAME_LABEL: `Ralph Waldo Emerson`,
     CHIPPER_NAME_LABEL: `Chipper`,
     TK_NAME_LABEL: `TK`,

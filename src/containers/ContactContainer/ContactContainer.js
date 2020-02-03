@@ -1,10 +1,9 @@
-import React, { useState, useCallback, useReducer } from 'react';
+import React, { useState, useReducer } from 'react';
 import Contact from "../../components/Contact";
 import emailjs from "emailjs-com";
 import { emailjsTemplateID, emailjsUserID } from "../../config";
 
 const ContactContainer = (props) => {
-
     const [formData, setFormData] = useReducer(
         (state, newState) => ({ ...state, ...newState }),
         {
