@@ -4,14 +4,14 @@ const InputField = ({
   id,
   passableRef,
   className,
+  onChange,
+  value,
   placeholder,
   hasIcon,
   iconPosition,
-  onChange,
   iconName,
-  type,
   disabled,
-  value,
+  type,
   accept,
   style
 }) => {
@@ -42,15 +42,15 @@ const InputField = ({
   return (
     <input
       id={id}
-      accept={accept}
       ref={passableRef}
       className={className}
-      style={componentStyle}
       onChange={onChange}
-      placeholder={placeholder}
-      type={type}
-      disabled={disabled}
       value={value}
+      placeholder={placeholder}
+      disabled={disabled}
+      type={type}
+      accept={accept}
+      style={componentStyle}
     />
   );
 };

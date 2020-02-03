@@ -42,6 +42,9 @@ const Contact = ({
                             onChange={onInputChange}
                             value={first_name}
                             placeholder={content.FIRST_NAME}
+                            hasIcon
+                            iconPosition="right"
+                            iconName="username_main_4"
                             style={
                                 ((clickCount > 0) && (first_name.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
                                 ((clickCount > 0) && (first_name.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
@@ -55,6 +58,9 @@ const Contact = ({
                             onChange={onInputChange}
                             value={last_name}
                             placeholder={content.LAST_NAME}
+                            hasIcon
+                            iconPosition="right"
+                            iconName="username_main_4"
                             style={
                                 ((clickCount > 0) && (last_name.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
                                 ((clickCount > 0) && (last_name.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
@@ -68,6 +74,9 @@ const Contact = ({
                             onChange={onInputChange}
                             value={email}
                             placeholder={content.EMAIL}
+                            hasIcon
+                            iconPosition="right"
+                            iconName="email_main_4"
                             style={
                                 ((clickCount > 0) && (email.length === 0)) ? { borderTop: "2px solid #ff0000" } : 
                                 ((clickCount > 0) && (email.length !== 0)) ? { borderTop: "2px solid #0080005b" } : {}
@@ -75,22 +84,44 @@ const Contact = ({
                         />
                     </div>
                     <div onClick={() => handleSelectClick(!selectIsOpen)} className="inputContainer">
-                        <InputField 
-                            id="inquiry_type"
-                            className="inputField"
-                            onChange={onInputChange}
-                            value={inquiry_type}
-                            placeholder={content.INQUIRY_TYPE}
-                            hasIcon
-                            iconPosition="right"
-                            iconName="add_circle"
-                            disabled={true}
-                            style={clickCount > 0 && { borderTop: "2px solid #0080005b" }}
-                        />
+                        {!selectIsOpen && (
+                            <InputField 
+                                id="inquiry_type"
+                                className="inputField"
+                                onChange={onInputChange}
+                                value={inquiry_type}
+                                placeholder={content.INQUIRY_TYPE}
+                                hasIcon
+                                iconPosition="right"
+                                iconName="add_circle_main_4"
+                                disabled={true}
+                                style={
+                                    selectIsOpen ? { color: "#c90016", borderTop: "2px solid #c90016" } :
+                                    clickCount > 0 ? { borderTop: "2px solid #0080005b" } : {}
+                                }
+                            />
+                        )}
                         {selectIsOpen && (
-                            <ul className="selectList">
-                                {content.INQUIRY_TYPES.map((type, i) => <li onClick={(e) => onInputChange(e, type)} key={i} style={(inquiry_type === type) ? { color: '#c90016' } : {}}>{type}</li>)}
-                            </ul>
+                            <React.Fragment>
+                                <InputField 
+                                    id="inquiry_type"
+                                    className="inputField"
+                                    onChange={onInputChange}
+                                    value={inquiry_type}
+                                    placeholder={content.INQUIRY_TYPE}
+                                    hasIcon
+                                    iconPosition="right"
+                                    iconName="add_circle_harvard_red"
+                                    disabled={true}
+                                    style={
+                                        selectIsOpen ? { color: "#c90016", borderTop: "2px solid #c90016" } :
+                                        clickCount > 0 ? { borderTop: "2px solid #0080005b" } : {}
+                                    }
+                                />
+                                <ul className="selectList">
+                                    {content.INQUIRY_TYPES.map((type, i) => <li onClick={(e) => onInputChange(e, type)} key={i} style={(inquiry_type === type) ? { color: '#c90016' } : {}}>{type}</li>)}
+                                </ul>
+                            </React.Fragment>
                         )}
                     </div>
                 </div>

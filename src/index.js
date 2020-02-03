@@ -9,9 +9,7 @@ import store from "./state/store";
 const App = () => {
     return (
         <main className="mainContainer">
-            <Provider store={store}>
-                <Router />
-            </Provider>
+            <Provider store={store}><Router /></Provider>
         </main>
     );
 };

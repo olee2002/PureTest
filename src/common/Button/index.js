@@ -2,7 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import Icon from "../Icon";
 
-const Button = ({ className, onClick, buttonText, isIcon, iconName, disabled }) => {
+const Button = ({ 
+  onClick, 
+  className, 
+  buttonText, 
+  isIcon, 
+  iconName, 
+  disabled 
+}) => {
   return !isIcon ? (
     <button className={className} onClick={onClick} disabled={disabled}>
       {buttonText}
@@ -15,17 +22,17 @@ const Button = ({ className, onClick, buttonText, isIcon, iconName, disabled }) 
 };
 
 Button.propTypes = {
-  className: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+  className: PropTypes.string.isRequired,
   buttonText: PropTypes.string,
-  disabled: PropTypes.bool,
-  isIcon: PropTypes.bool
+  isIcon: PropTypes.bool,
+  disabled: PropTypes.bool
 };
 
 Button.defaultProp = {
-    isIcon: false,
-    disabled: false,
-    buttonText: "",
+  buttonText: "",
+  isIcon: false,
+  disabled: false
 };
 
 export default Button;

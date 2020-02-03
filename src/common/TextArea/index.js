@@ -3,13 +3,13 @@ import React from "react";
 const TextArea = ({
   id,
   className,
+  onChange,
+  value,
   placeholder,
   hasIcon,
-  onChange,
   iconName,
-  type,
-  value,
   disabled,
+  type,
   style
 }) => {
   let componentStyle = style;
@@ -27,12 +27,12 @@ const TextArea = ({
       rows="8"
       id={id}
       className={className}
-      style={componentStyle}
       onChange={onChange}
-      placeholder={placeholder}
-      type={type}
       value={value}
+      placeholder={placeholder}
       disabled={disabled}
+      type={type}
+      style={componentStyle}
     />
   );
 };

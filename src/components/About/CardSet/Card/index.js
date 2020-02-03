@@ -4,7 +4,6 @@ import content from "./content";
 import Icon from "../../../../common/Icon";
 
 const Card = ({ data, i }) => {
-
     const {
         first_name,
         middle_name,
@@ -16,14 +15,12 @@ const Card = ({ data, i }) => {
         education_2,
         education_3
     } = data;
-
     const split = date_of_birth.split('-');
     const formattedDate = new Date(split[0], split[1] - 1, split[2]).toLocaleDateString({},
         {timeZone:"UTC",month:"long", day:"2-digit", year:"numeric"}
     );
-
     const educationArray = [education_1, education_2, education_3].map(education => <li className="education">{education}</li>)
-
+    
     return (
         (first_name !== "Tiffany" && first_name !== "Eric" && (
             <ul className="profileCardContainer" key={i}>

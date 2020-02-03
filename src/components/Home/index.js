@@ -7,11 +7,7 @@ import FooterNav from "../FooterNav";
 
 const Home = (props) => {
     let [interval, setIntervalFunction] = useState(0);
-
-    setInterval(() => {
-        setIntervalFunction(interval = interval === 4 ? 0 : interval + 1);
-    }, 5000);
-
+    setInterval(() => {setIntervalFunction(interval = interval === 4 ? 0 : interval + 1);}, 5000);
     return (
         <div className="homeContainer">
             <NavContainer />

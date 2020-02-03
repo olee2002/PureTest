@@ -5,11 +5,9 @@ import { getAdminData } from "../../state/actions/getActions";
 import { dataSelector } from "../../state/selectors/gets";
 
 const AboutContainer = ({ data = [], getAdminDataDispatchAction }) => {
-
     useEffect(() => {
         getAdminDataDispatchAction();
     }, [getAdminDataDispatchAction]);
-
     return (<About data={data} />);
 };
 

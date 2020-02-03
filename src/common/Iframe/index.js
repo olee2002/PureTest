@@ -1,21 +1,21 @@
 import React from "react";
 
 const Iframe = ({
-    width,
-    height,
-    className,
-    src,
-    title,
-    frameBorder,
-    allow,
-    allowFullScreen,
+  className,
+  src,
+  title,
+  width,
+  height,
+  frameBorder,
+  allow,
+  allowFullScreen,
 }) => (
   <iframe
-    width={width}
-    height={height}
     className={className}
     src={src}
     title={title}
+    width={width}
+    height={height}
     frameBorder={frameBorder}
     allow={allow}
     allowFullScreen={allowFullScreen}
