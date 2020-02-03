@@ -11,13 +11,9 @@ const Button = ({
   disabled 
 }) => {
   return !isIcon ? (
-    <button className={className} onClick={onClick} disabled={disabled}>
-      {buttonText}
-    </button>
+    <button onClick={onClick} className={className} disabled={disabled}>{buttonText}</button>
   ) : (
-    <div role="button" onClick={onClick}>
-      <Icon className={className} iconName={iconName} />
-    </div>
+    <div onClick={onClick} role="button"><Icon className={className} iconName={iconName} /></div>
   );
 };
 

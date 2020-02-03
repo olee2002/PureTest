@@ -1,4 +1,4 @@
-import api, { genericHeaders, authHeaders } from "../../config";
+import api, { authHeaders } from "../../config";
 
 export const GET_ADMIN_DATA_SUCCESS = "GET_ADMIN_DATA_SUCCESS";
 export const GET_ADMIN_DATA_FAILURE = "GET_ADMIN_DATA_FAILURE";

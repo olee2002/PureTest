@@ -6,13 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import Router from "./routes";
 import store from "./state/store";
 
-const App = () => {
-    return (
-        <main className="mainContainer">
-            <Provider store={store}><Router /></Provider>
-        </main>
-    );
-};
+const App = () => {return (<main className="mainContainer"><Provider store={store}><Router /></Provider></main>);};
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
