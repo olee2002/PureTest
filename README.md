@@ -3,7 +3,7 @@
 
 ## So far...
 
-General 2/1/20:
+General:
 
 ![](./src/assets/img/readme/readme.gif)
 
