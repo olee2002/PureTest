@@ -3,6 +3,7 @@
 .homeContainer {
     @extend .bodyContainer;
     background: $main-4;
+    overflow: hidden;
     .headerContainer {
         .headerLabels {
             color: $harvard-red;
@@ -13,38 +14,70 @@
             0%, 100% { opacity: 0; };
             50% { opacity: 1; }
         }
-        .photoGallery {
+        .photoGalleryCarousel {
             position: relative;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 700px;
-            height: 500px;
-            margin: auto;
-            background: $main-1;
-            border: 1px solid $harvard-red;
-            border-radius: 15px;
-            .arrowLeftIcon {
+            width: 100%;
+            .photoGalleryLeftSide {
                 position: absolute;
-                width: 45px;
-                height: 45px;
-                left: 10px;
-                top: calc(50% - 22.5px);
-                border-radius: 50%;
-                box-shadow: $shadow;
-                z-index: 1000;
+                width: calc(50% - 350px);
+                height: 500px;
+                background: $main-1;
+                opacity: .6;
+                z-index: 100;
             }
-            .arrowLeftIcon:hover {
-                cursor: pointer;
+            .photoGalleryWindow {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 700px;
+                height: 500px;
+                left: calc(50% - 350px);
+                .arrowLeftIcon {
+                    position: absolute;
+                    width: 45px;
+                    height: 45px;
+                    left: -60px;
+                    top: calc(50% - 22.5px);
+                    background: white;
+                    border-radius: 50%;
+                    box-shadow: $shadow;
+                    z-index: 1000;
+                }
+                .arrowLeftIcon:hover {
+                    cursor: pointer;
+                }
+                .photoRow {
+                    display: flex;
+                    transform-style: preserve-3d;
+                    transition: all 1s;
+                    .photo {
+                        width: 700px;
+                        height: 500px;
+                    }
+                }
+                .arrowRightIcon {
+                    @extend .arrowLeftIcon;
+                    left: initial;
+                    right: -60px;
+                }
             }
-            .arrowRightIcon {
-                @extend .arrowLeftIcon;
-                left: initial;
-                right: 10px;
+            .photoGalleryWindowBorder {
+                position: absolute;
+                width: 700px;
+                height: 500px;
+                left: calc(50% - 350px);
+                border: 2px solid $harvard-red;
+            }
+            .photoGalleryRightSide {
+                @extend .photoGalleryLeftSide;
+                right: 0;
             }
         }
     }
     .bodyContainer {
+        margin-top: 500px;
         text-align: center;
     }
     .footerNavContainer {
