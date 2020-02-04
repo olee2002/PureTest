@@ -48,7 +48,7 @@ const Home = (props) => {
                 </div>
             </section>
             <section className="bodyContainer">
-                <h1>More content to come</h1>
+                <h3>{content.FOOTER}</h3>
             </section>
             <FooterNav />
         </div>

@@ -8,7 +8,7 @@ const Nav = (props) => {
         <section className="navContainer">
             <NavLink to="/" className="navHome"><h1>{content.TITLE}</h1></NavLink>
             <NavLink to="/about" className="navLinks">About</NavLink>
-            <NavLink to="/nothing" className="navLinks">Nothing Yet</NavLink>
+            <NavLink to="/media" className="navLinks">Media</NavLink>
             <NavLink to="/contact" className="navLinks">Contact</NavLink>
             <div className="">Something here later</div>
         </section>

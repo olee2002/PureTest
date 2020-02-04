@@ -3,7 +3,7 @@ import Contact from "../../components/Contact";
 import emailjs from "emailjs-com";
 import { emailjsTemplateID, emailjsUserID } from "../../config";
 
-const ContactContainer = (props) => {
+const ContactContainer = () => {
     const [formData, setFormData] = useReducer(
         (state, newState) => ({ ...state, ...newState }),
         {

@@ -1,0 +1,9 @@
+@import "../../scss/common.styles.scss";
+
+.mediaContainer {
+    @extend .bodyContainer;
+    .mediaBodyContainer {
+        padding: 20px;
+        height: 90vh;
+    }
+}
