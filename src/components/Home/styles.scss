@@ -2,12 +2,16 @@
 
 .homeContainer {
     @extend .bodyContainer;
-    background: $main-4;
+    background: $main-1;
     overflow: hidden;
     .headerContainer {
-        .headerLabels {
+        .title {
             color: $harvard-red;
             text-align: center;
+        }
+        .headerLabels {
+            @extend .title;
+            color: $main-2;
             animation: fade 5s infinite ease;
         }
         @keyframes fade {
