@@ -11,6 +11,10 @@ Contact form including working validiation:
 
 ![](./src/assets/img/readme/readme2.gif)
 
+Recent progress on new Resources component:
+
+![](./src/assets/img/readme/readme3.gif)
+
 ## Description
 
 In progress... Coming soon...

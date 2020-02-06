@@ -1,0 +1,18 @@
+@import "../../../scss/common.styles.scss";
+@import "../Literature/styles.scss";
+
+.videoContainer {
+    @extend .literatureContainer;
+    display: flex;
+    .videoList {
+        width: 200px;
+        background: $main-1;
+        color: $main-2;
+        box-shadow: $shadow;
+    }
+    .videoIframeComponent {
+        margin: auto;
+        background: $main-1;
+        box-shadow: $shadow;
+    }
+}

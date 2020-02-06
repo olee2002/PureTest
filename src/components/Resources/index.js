@@ -2,21 +2,58 @@ import React from 'react';
 import "./styles.scss";
 import content from "./content";
 import NavContainer from "../../containers/NavContainer";
+import Literature from "./Literature";
+import Video from "./Video";
+import Other from "./Other";
 import FooterNav from "../FooterNav";
 
-const Resources = () => {
+const Resources = ({
+    isSelected,
+    setIsSelected
+}) => {
+    const {
+        literature,
+        video,
+        other
+    } = isSelected;
     return (
         <div className="resourcesContainer">
             <NavContainer />
             <section className="mediaBox">
                 <ul className="mediaBoxTabContainer">
-                    <li className="mediaBoxTab">{content.LITERATURE}</li>
-                    <li className="mediaBoxTab">{content.VIDEOS}</li>
-                    <li className="mediaBoxTab">{content.OTHER}</li>
+                    <div className="mediaBoxTabBackground">
+                        <li 
+                            onClick={() => setIsSelected({ literature: true, video: false, other: false })} 
+                            className="mediaBoxTab"
+                            style={literature ? { opacity: 1 } : {}}
+                        >
+                            <h3>{content.LITERATURE}</h3>
+                        </li>
+                    </div>
+                    <div className="mediaBoxTabBackground">
+                        <li 
+                            onClick={() => setIsSelected({ literature: false, video: true, other: false })} 
+                            className="mediaBoxTab"
+                            style={video ? { opacity: 1 } : {}}
+                        >
+                            <h3>{content.VIDEO}</h3>
+                        </li>
+                    </div>
+                    <div className="mediaBoxTabBackground">
+                        <li 
+                            onClick={() => setIsSelected({ literature: false, video: false, other: true })} 
+                            className="mediaBoxTab"
+                            style={other ? { opacity: 1 } : {}}
+                        >
+                            <h3>{content.OTHER}</h3>
+                        </li>
+                    </div>
                 </ul>
-                <ul className="mediaBoxContentContainer">
-
-                </ul>
+                <div className="mediaBoxContentContainer">
+                    {literature && <Literature />}
+                    {video && <Video />}
+                    {other && <Other />}
+                </div>
             </section>
             <FooterNav />
         </div>

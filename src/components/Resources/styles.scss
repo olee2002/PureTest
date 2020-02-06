@@ -2,24 +2,47 @@
 
 .resourcesContainer {
     @extend .bodyContainer;
+    height: 100vh;
+    background: $main-4;
+    overflow: hidden;
     .mediaBox {
         width: fit-content;
-        margin: 50px auto;
+        margin: 20px auto;
         .mediaBoxTabContainer {
             display: flex;
             list-style: none;
-            .mediaBoxTab {
-                width: 150px;
-                height: 50px;
-                border: 1px solid $harvard-red;
-                border-bottom: none;
+            .mediaBoxTabBackground {
+                background: $main-1;
                 border-radius: 25px 25px 0 0;
+                .mediaBoxTab {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 150px;
+                    height: 50px;
+                    background: $manila;
+                    color: $main-1;
+                    border-bottom: none;
+                    border-radius: 25px 25px 0 0;
+                    opacity: .6;
+                }
+                .mediaBoxTab:hover {
+                    cursor: pointer;
+                }
             }
         }
         .mediaBoxContentContainer {
             width: 1060px;
             height: 500px;
-            border: 1px solid $harvard-red;
+            background: $manila;
+            color: $main-1;
+            border-radius: 0 5px 0 0;
         }
+    }
+    .footerNavContainer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
     }
 }
