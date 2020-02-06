@@ -1,3 +1,6 @@
 export default {
-    TITLE: "The Kim Family LLC"
+    TITLE: "The Kim Family LLC",
+    ABOUT: `About`,
+    RESOURCES: `Resources`,
+    CONTACT: `Contact`
 };

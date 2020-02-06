@@ -1,0 +1,25 @@
+@import "../../scss/common.styles.scss";
+
+.resourcesContainer {
+    @extend .bodyContainer;
+    .mediaBox {
+        width: fit-content;
+        margin: 50px auto;
+        .mediaBoxTabContainer {
+            display: flex;
+            list-style: none;
+            .mediaBoxTab {
+                width: 150px;
+                height: 50px;
+                border: 1px solid $harvard-red;
+                border-bottom: none;
+                border-radius: 25px 25px 0 0;
+            }
+        }
+        .mediaBoxContentContainer {
+            width: 1060px;
+            height: 500px;
+            border: 1px solid $harvard-red;
+        }
+    }
+}
