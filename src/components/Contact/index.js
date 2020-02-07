@@ -23,11 +23,10 @@ const Contact = ({
         inquiry
     } = formData;
 
-    let formIsValid = first_name.length < 1 ? 
-        false : last_name.length < 1 ? 
-        false : email.length < 1 ?
-        false : inquiry.length < 1 ? 
-        false : true;
+    let formIsValid = first_name.length < 1 ? false : 
+        last_name.length < 1 ? false : 
+        email.length < 1 ? false : 
+        inquiry.length < 1 ? false : true;
 
     return (
         <div className="contactContainer">
