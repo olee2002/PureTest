@@ -10,7 +10,8 @@ export default {
         `Property Purchase or Sale Information Request`,
         `Investment or Financial Advice Request`,
         `Real-Estate Market Findings or Area Updates`,
-        `Non-Profit Partnership or Volunteer Opportunities`
+        `Non-Profit Partnership or Volunteer Opportunities`,
+        `Need Help with Website or Report Potential Bugs`
     ],
     TEXTAREA_PLACEHOLDER: `Please enter your message here.`,
     BUTTON_NAME_TYPES: [`Submit`, `Send`]

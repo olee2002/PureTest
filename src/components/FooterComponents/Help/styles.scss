@@ -1,0 +1,29 @@
+@import "../../../scss/common.styles.scss";
+
+.helpContainer {
+    @extend .bodyContainer;
+    .helpContentContainer {
+        padding: 30px;
+        .aboutContentContainer {
+            h2 {
+                margin: 0;
+                color: $harvard-red;
+            }
+            .contactLinkContainer {
+                margin-bottom: 18.72px;
+                a {
+                    color: $standard-blue;
+                }
+                a:visited {
+                    color: $visited-purple;
+                }
+            }
+        }
+        .webDesignContentContainer {
+            @extend .aboutContentContainer;
+            .contactLinkContainer {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

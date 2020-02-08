@@ -5,6 +5,7 @@ import HomeContainer from "./containers/HomeContainer";
 import AboutContainer from "./containers/AboutContainer";
 import ResourcesContainer from "./containers/ResourcesContainer";
 import ContactContainer from "./containers/ContactContainer";
+import Help from "./components/FooterComponents/Help";
 
 export default (props) => {
     return (
@@ -14,6 +15,8 @@ export default (props) => {
                 <Route path="/about" component={AboutContainer} exact />
                 <Route path="/resources" component={ResourcesContainer} exact />
                 <Route path="/contact" component={ContactContainer} exact />
+                <Route path="/legal" exact />
+                <Route path="/help" component={Help} exact />
             </Switch>
         </Router>
     );

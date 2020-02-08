@@ -29,7 +29,7 @@ const Contact = ({
         inquiry.length < 1 ? false : true;
 
     return (
-        <div className="contactContainer">
+        <div onClick={selectIsOpen ? () => handleSelectClick(false) : ""} className="contactContainer">
             <NavContainer />
             <h5 className="contactFormHeader">{content.HEADER}</h5>
             <form className="formContainer">
@@ -126,6 +126,7 @@ const Contact = ({
                 </div>
                 <div className="textAreaContainer">
                     <TextArea 
+                        rows="8"
                         id="inquiry"
                         className={((clickCount > 0) && (inquiry.length < 1)) ? "errorArea" : "textArea"}
                         onChange={onInputChange}

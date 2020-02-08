@@ -26,4 +26,16 @@
     .navLinks.active {
         color: $main-3;
     }
+    .iconContainer {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        background: $main-1;
+        border-radius: $font-size-small - 2;
+        box-shadow: $shadow;
+        .logoIcon {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
