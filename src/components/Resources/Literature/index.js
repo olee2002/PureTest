@@ -7,9 +7,9 @@ const Literature = () => {
         <section className="literatureContainer">
             <h1 className="literatureHeader">{content.RECOMMENDED}</h1>
             <ul className="recommendedList">
-                {content.BOOKS.map((BOOK) => {
+                {content.BOOKS.map((BOOK, i) => {
                     return (
-                        <a className="recommendedLink" href={BOOK.LINK} target="_blank">
+                        <a className="recommendedLink" href={BOOK.LINK} target="_blank" key={i}>
                             <li className="recommendedLi">
                                 <span className="bookTitle">{BOOK.TITLE}</span>
                                 <div className="authorContainer">

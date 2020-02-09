@@ -1,0 +1,12 @@
+@import "../../../scss/common.styles.scss";
+
+.termsOfUseContainer {
+    @extend .bodyContainer;
+    .contentContainer {
+        padding: 30px;
+        white-space: pre-line;
+        a {
+            font-size: $font-size-xl;
+        }
+    }
+}

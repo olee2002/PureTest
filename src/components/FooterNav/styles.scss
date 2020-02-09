@@ -3,11 +3,13 @@
 .footerNavContainer {
     position: relative;
     display: flex;
-    justify-content: space-evenly;
     background: $harvard-red;
     color: $main-1;
     .footerLinks {
+        width: 10%;
+        color: $main-1;
         padding: 20px;
+        text-align: center;
     }
     .copyrightContainer {
         position: absolute;

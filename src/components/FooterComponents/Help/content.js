@@ -24,8 +24,10 @@ export default {
     WEB_DESIGN_LABEL: `Website details:`,
     WEB_DESIGN_DESCRIPTION: `This website was built using Create-React-App. Other than emailjs, it did not 
     use any other major npm packages.`,
-    WEB_DESIGN_HELP: `To report a bug or ask for further help using the site, please go to the Contact section, 
-    select the appropriate inquiry type, and submit an inquiry.`,
-    WEB_DESIGN_CONTACT: `For questions about this site's web design:`,
-    EUGENE_LINKED_IN: `Eugene Kim Linked-in`
+    WEB_DESIGN_HELP: `To report a bug or ask for further help using the site, please go to the Contact section 
+    found in the upper navbar and submit a formal inquiry.`,
+    WEB_DESIGN_CONTACT: `For anything further regarding the website and/or its designs:`,
+    EUGENE_LINKED_IN: `Eugene Kim Linked-in`,
+    SIGNATURE: `The Kim Family LLC`,
+    LOCATION: `Atlanta, GA`
 };

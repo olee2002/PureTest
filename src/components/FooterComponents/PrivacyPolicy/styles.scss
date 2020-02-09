@@ -1,0 +1,19 @@
+@import "../../../scss/common.styles.scss";
+
+.privacyPolicyContainer {
+    @extend .bodyContainer;
+    height: 100vh;
+    .contentContainer {
+        padding: 30px;
+        white-space: pre-line;
+        h3 {
+            margin: 0;
+        }
+    }
+    .footerNavContainer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+}

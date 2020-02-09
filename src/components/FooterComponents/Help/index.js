@@ -31,6 +31,11 @@ const Help = () => {
                     <p className="subHeaderDescription">{content.WEB_DESIGN_CONTACT}</p>
                     <div className="contactLinkContainer"><a href="https://www.linkedin.com/in/eugene-kim-1707/" target="_blank">{content.EUGENE_LINKED_IN}</a></div>
                 </div>
+                <hr />
+                <div className="signatureContainer">
+                    <p className="signature">{content.SIGNATURE}</p>
+                    <p className="location">{content.LOCATION}</p>
+                </div>
             </section>
             <FooterNav />
         </div>

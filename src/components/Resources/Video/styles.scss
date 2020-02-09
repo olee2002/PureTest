@@ -4,15 +4,48 @@
 .videoContainer {
     @extend .literatureContainer;
     display: flex;
-    .videoList {
+    ul {
         width: 200px;
         background: $main-1;
         color: $main-2;
         box-shadow: $shadow;
+        list-style: none;
+        overflow: scroll;
+        li {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            padding: 15px;
+            color: $harvard-red;
+            font-size: $font-size-medium;
+            border-bottom: 1px solid $harvard-red;
+            transition: background .5s;
+        }
+        li:hover {
+            cursor: pointer;
+            background: $harvard-red;
+            color: $main-1;
+            transition: background .5s;
+        }
     }
-    .videoIframeComponent {
-        margin: auto;
-        background: $main-1;
-        box-shadow: $shadow;
+    .iframeContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 200px);
+        .speakerLabelContainer {
+            width: fit-content;
+            height: fit-content;
+            margin-top: 20px;
+            padding: 10px;
+            background: $harvard-red;
+            border-radius: 15px;
+            h2 {
+                margin: 0;
+                color: $main-1;
+            }
+        }
     }
 }

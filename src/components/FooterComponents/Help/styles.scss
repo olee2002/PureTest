@@ -7,22 +7,18 @@
         .aboutContentContainer {
             h2 {
                 margin: 0;
-                color: $harvard-red;
             }
             .contactLinkContainer {
                 margin-bottom: 18.72px;
-                a {
-                    color: $standard-blue;
-                }
-                a:visited {
-                    color: $visited-purple;
-                }
             }
         }
         .webDesignContentContainer {
             @extend .aboutContentContainer;
-            .contactLinkContainer {
-                margin-bottom: 0;
+        }
+        .signatureContainer {
+            margin-top: 18.72px;
+            p {
+                margin: 0;
             }
         }
     }

@@ -10,8 +10,10 @@ export default {
         `Property Purchase or Sale Information Request`,
         `Investment or Financial Advice Request`,
         `Real-Estate Market Findings or Area Updates`,
+        `Questions Regarding the Privacy Policy`,
+        `Terms of Use Disagreement or to File a Complaint`,
+        `Help with Website or to Report Bugs`,
         `Non-Profit Partnership or Volunteer Opportunities`,
-        `Need Help with Website or Report Potential Bugs`
     ],
     TEXTAREA_PLACEHOLDER: `Please enter your message here.`,
     BUTTON_NAME_TYPES: [`Submit`, `Send`]

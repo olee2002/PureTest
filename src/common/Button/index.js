@@ -8,7 +8,7 @@ const Button = ({
   buttonText, 
   isIcon, 
   iconName, 
-  disabled 
+  disabled
 }) => {
   return !isIcon ? (
     <button onClick={onClick} className={className} disabled={disabled}>{buttonText}</button>
