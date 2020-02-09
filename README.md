@@ -1,19 +1,15 @@
 # The Kim Family LLC Website 
 ## Specializing in investment and management of commercial and real-estate properties
 
+The website is available to be viewed in its beta-form at: http://3.136.116.82/
+
+Still working out a few kinks before making it official.
+
 ## So far...
-
-General:
-
-![](./src/assets/img/readme/readme.gif)
 
 Contact form including working validiation:
 
 ![](./src/assets/img/readme/readme2.gif)
-
-Recent progress on new Resources component:
-
-![](./src/assets/img/readme/readme3.gif)
 
 ## Description
 
