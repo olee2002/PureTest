@@ -5,14 +5,14 @@ import NavContainer from "../../containers/NavContainer";
 import Icon from "../../common/Icon";
 import FooterNav from "../FooterNav";
 
-const Home = (props) => {
+const Home = () => {
     let [interval, setIntervalFunction] = useState(0);
     setInterval(() => {setIntervalFunction(interval = interval === 4 ? 0 : interval + 1);}, 5000);
     const [clickCount, setClickCount] = useState(0);
     const handleArrowClick = (type) => {
         type === "left" ? setClickCount(clickCount - 1) : setClickCount(clickCount + 1);
     }
-    console.log(clickCount);
+
     return (
         <div className="homeContainer">
             <NavContainer />
