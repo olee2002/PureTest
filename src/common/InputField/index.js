@@ -40,6 +40,8 @@ const InputField = ({
     }
   }
   return (
+     <>
+     <label htmlFor={id} style={{ fontsize:4 }}/>
     <input
       id={id}
       ref={passableRef}
@@ -52,6 +54,7 @@ const InputField = ({
       accept={accept}
       style={componentStyle}
     />
+    </>
   );
 };
 
