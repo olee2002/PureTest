@@ -32,5 +32,51 @@ export default {
     TK_NAME_LABEL: `TK`,
     TK_REMEMBERANCE_1: `Best-friend`,
     TK_REMEMBERANCE_2: `Confidant`,
-    TK_REMEMBERANCE_3: `Lifelong Brother`
+    TK_REMEMBERANCE_3: `Lifelong Brother`,
+    DATA: [
+        {
+            first_name: `Choon`,
+            middle_name: `Kyu`,
+            last_name: `Kim`,
+            title: `Founder and Partner`,
+            date_of_birth: `1952-11-26`,
+            occupation: `Gastroenterologist`,
+            education_1: `Yonsei University`,
+            education_2: ``,
+            education_3: ``,
+        },
+        {
+            first_name: `Eun`,
+            middle_name: `Hui`,
+            last_name: `Kim`,
+            title: `Partner, Manager, Accountant`,
+            date_of_birth: `1953-11-25`,
+            occupation: `House-wife`,
+            education_1: `Ewha University`,
+            education_2: ``,
+            education_3: ``,
+        },
+        {
+            first_name: `Eunice`,
+            middle_name: `Seoyoung`,
+            last_name: `Dove`,
+            title: `Partner, Manager, Business Advisor`,
+            date_of_birth: `1983-11-16`,
+            occupation: `Founder/CEO of Spark Wonder Books`,
+            education_1: `Swarthmore College`,
+            education_2: `The London School of Economics`,
+            education_3: `Harvard Business School`,
+        },
+        {
+            first_name: `Eugene`,
+            middle_name: ``,
+            last_name: `Kim`,
+            title: `Partner and Manager`,
+            date_of_birth: `1985-06-20`,
+            occupation: `Software Developer and Student`,
+            education_1: `Boston College`,
+            education_2: `UMBC`,
+            education_3: `Howard Community College`,
+        }
+    ]
 };

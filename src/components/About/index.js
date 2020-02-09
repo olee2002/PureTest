@@ -6,11 +6,11 @@ import CardSet from "./CardSet";
 import Icon from "../../common/Icon";
 import FooterNav from "../FooterNav";
 
-const About = ({ data }) => {
+const About = () => {
     return (
         <div className="aboutContainer">
             <NavContainer />
-            <section className="cardSetContainer"><CardSet data={data} /></section>
+            <section className="cardSetContainer"><CardSet data={content.DATA} /></section>
             <section className="contentContainer">
                 <p><strong>{content.KFLLC_LABEL}</strong>&nbsp;{content.PART_ONE}&nbsp;{content.PART_TWO}</p>
                 <p>{content.PART_THREE}&nbsp;<strong>{content.PROPERTIES_LABEL}</strong>&nbsp;{content.PART_FOUR}</p>
