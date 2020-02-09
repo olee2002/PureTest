@@ -77,7 +77,7 @@ const ContactContainer = () => {
 
     return (
        <>
-         <input value='' placeholder='placeholder' style={{border:'1px'}}/>
+         <input value='' placeholder='placeholder123' style={{color:'gray'}}/>
         <Contact 
             formData={formData}
             clickCount={clickCount}
