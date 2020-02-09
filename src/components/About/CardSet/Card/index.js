@@ -26,7 +26,7 @@ const Card = ({ data, i }) => {
             <ul className="profileCardContainer" key={i}>
                 <li className="fullNameLabel">{first_name}&nbsp;{middle_name ? middle_name[0] + ". ": ""}{last_name}</li>
                 <div className="position">{title}</div>
-                <div className="iconContainer"><Icon className="profileIcon" iconName={first_name} /></div>
+                <div className="iconContainer"><Icon className="profileIcon" iconName={first_name.toLowerCase()} /></div>
                 <li className="dateOfBirthContainer">
                     <label className="dateOfBirthLabel">{content.DATE_OF_BIRTH}&nbsp;</label>
                     <div className="dateOfBirth">{formattedDate}</div>
