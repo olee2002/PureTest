@@ -35,7 +35,7 @@ const Contact = ({
             <form className="formContainer">
                 <div className="headerInputRow">
                     <div className="inputContainer">
-                       {console.log('hello', content.FIRST_NAME)}
+                       <input value='' placeholder='placeholder'/>
                         <InputField 
                             id="first_name"
                             className={((clickCount > 0) && (first_name.length === 0)) ? "errorField" : "inputField"}
