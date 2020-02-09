@@ -41,7 +41,7 @@ const Contact = ({
                             className={((clickCount > 0) && (first_name.length === 0)) ? "errorField" : "inputField"}
                             onChange={onInputChange}
                             value={first_name ? first_name : ''}
-                            placeholder={content.FIRST_NAME}
+                            placeholder='first name'
                             hasIcon
                             iconPosition="right"
                             iconName="username_main_4"
@@ -57,7 +57,7 @@ const Contact = ({
                             className={((clickCount > 0) && (last_name.length === 0)) ? "errorField" : "inputField"}
                             onChange={onInputChange}
                             value={last_name ? last_name : ''}
-                            placeholder={content.LAST_NAME}
+                            placeholder='last name'
                             hasIcon
                             iconPosition="right"
                             iconName="username_main_4"
@@ -73,7 +73,7 @@ const Contact = ({
                             className={((clickCount > 0) && (email.length === 0)) ? "errorField" : "inputField"}
                             onChange={onInputChange}
                             value={email ? email : ''}
-                            placeholder={content.EMAIL}
+                            placeholder='email'
                             hasIcon
                             iconPosition="right"
                             iconName="email_main_4"
