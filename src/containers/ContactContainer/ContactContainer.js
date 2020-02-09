@@ -76,6 +76,8 @@ const ContactContainer = () => {
     };
 
     return (
+       <>
+         <input value='' placeholder='placeholder' style={{border:'1px'}}/>
         <Contact 
             formData={formData}
             clickCount={clickCount}
@@ -84,6 +86,7 @@ const ContactContainer = () => {
             handleButtonClick={handleButtonClick}
             onInputChange={handleInputChange}
         />
+        </>
     );
 };
 
